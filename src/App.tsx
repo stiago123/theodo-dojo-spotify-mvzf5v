@@ -45,6 +45,17 @@ const App = () => {
           goToNextTrack()
         </button>
       </div>
+      {/* Print the tracks */}
+      {tracks && (
+        <div>
+          <h2>Tracks:</h2>
+          <ul>
+            {tracks.map((track, index) => (
+              <li key={index}>{track?.track.name}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };

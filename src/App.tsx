@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { fetchTracks } from './lib/fetchTracks';
 import { useQuery } from '@tanstack/react-query';
 
+
 const trackUrls = [
   'https://p.scdn.co/mp3-preview/742294f35af9390e799dd96c633788410a332e52',
   'https://p.scdn.co/mp3-preview/5a12483aa3b51331aba663131dbac967ccb33d99',
@@ -37,7 +38,7 @@ const App = () => {
       <div className="App-images">
       <audio src={trackUrls[trackIndex]} autoPlay controls />
         
-        <p>C'est mon premiere apli musicalee</p>
+        <p>C'est mon premiere apli musicalee </p>
       </div>
       <div className="App-buttons">
       <button onClick={goToNextTrack}>

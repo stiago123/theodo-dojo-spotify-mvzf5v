@@ -28,7 +28,7 @@ const App = () => {
 		queryKey: ['tracks'],
 		queryFn: fetchTracks
 });
-  console.log(tracks?.length)
+  console.log(tracks)
   return (
     <div className="App">
       <header className="App-header">

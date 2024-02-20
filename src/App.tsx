@@ -44,6 +44,7 @@ const App = () => {
       <button onClick={goToNextTrack}>
           goToNextTrack()
         </button>
+
       </div>
       {/* Print the tracks */}
       {tracks && (
